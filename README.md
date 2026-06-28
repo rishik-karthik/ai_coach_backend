@@ -1,5 +1,3 @@
----
-
 ```markdown
 # 🏋️‍♂️ AI Real-time GYM Coach (Backend)
 
