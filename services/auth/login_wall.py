@@ -5,8 +5,8 @@ from services.persistence.exercise_repo import get_or_create_user
 def render_login_wall():
     if st.session_state.get("user_id") is not None:
         return True
-    
-    st.title("🏋️‍♂️ AI Real-time GYM Trainer")
+    st.image("./assests/dumbbell-solid.png",width=50)
+    st.title("AI Real-time GYM Trainer")
     st.markdown("### Welcome! Please enter a username to start.")
 
     with st.form("login_form", clear_on_submit=False):

@@ -19,7 +19,7 @@ from services.coaching.voice_pipeline import VoicePipeline, autoplay_audio
   
 def main():
     st.set_page_config(
-        page_icon="🏋️‍♀️",
+        page_icon="assests/dumbbell-solid.png",
         page_title="AI Real-time GYM Coach",
         initial_sidebar_state="expanded",
         layout="centered"
@@ -52,10 +52,11 @@ def main():
     workout_started = st.session_state.get("workout_started", False)
     
     with st.sidebar:
-        st.title("🏋️‍♂️ Apna AI Coach")
+        st.image("./assests/dumbbell-solid.png",width=50)
+        st.title("AI Coach")
 
         if st.session_state.username:
-            st.caption(f"👤 Login as {st.session_state.username}")
+            st.caption(f"👤 Logged as {st.session_state.username}")
 
         st.divider()
 
@@ -173,7 +174,7 @@ def main():
 
     if st.session_state.get("coach_feedback"):
         st.markdown("")
-        st.success(f"🤖 **Coach:** {st.session_state.coach_feedback}")
+        st.success(f"**Coach:** {st.session_state.coach_feedback}")
 
     if not workout_started:
         st.markdown(
