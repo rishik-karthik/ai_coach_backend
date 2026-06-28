@@ -1,6 +1,5 @@
 import streamlit as st
-import os, dotenv
-from dotenv import load_dotenv
+import os
 import time
 import pandas as pd
 from services.auth.login_wall import render_login_wall
